@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, Intial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Form Design</title>
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+     form {
+        border: 5px solid black;
+        font-weight: bold;
+     }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, pink, rgb(72, 72, 243));
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+            padding: 10px 15px;
+        }
+
+        header,
+        footer {
+            background-color: rgb(195, 240, 92);
+            padding: 20px;
+            text-align: center;
+            overflow: auto;
+            flex-basis: 100%;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        input[type="email"] {
+            /*   flex-basis: 100%; */
+            width: 93%;
+            margin-left: 15px;
+        }
+
+        p {
+            margin-left: 15px;
+        }
+
+         textarea {
+            background-color: lightgray;
+            width: 93%;
+            margin-left: 15px;
+        }
+
+        footer input[type="submit"] {
+
+            background-color: green;
+            height: 35px;
+            width: 80px;
+            font-weight: bold;
+            
+        } 
+    </style>--> 
+</head>
+
+<body>
+    <form>
+
+        <div class="container">
+            <!-- table header section start -->
+            <header>Create Account</header>
+            <!-- table header section end -->
+        </div>
+
+        <!-- First name and lastname section start  -->
+        <div class="container">
+            <div> <label>First name* </label>
+
+                <div> <input type="text" name="fname" placeholder="write your first name" required>
+                </div>
+            </div>
+
+            <div>
+                <label>Last name* </label>
+                <div> <input type="text" name="lname" placeholder="write your last name" required>
+                </div>
+            </div>
+        </div>
+        <!-- First name and lastname section end  -->
+        <div>
+            <p> Email* </p>
+            
+        </div>
+        <div>
+            <input type="email" name="email" placeholder="write your email" required>
+        </div>
+
+
+        <div class="container">
+            <div>
+                <label> Password* </label>
+                <div>
+                    <input type="password" name="password" placeholder="enter your password" required>
+                </div>
+            </div>
+            <div>
+                <label> Confirm Password* </label>
+                <div>
+                    <input type="password" name="password" placeholder="enter your password again" required>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label for="gender"> Gender</label>
+                <div>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </div>
+            </div>
+
+            <div>
+                <label for="hobbies"> Hobbies </label>
+                <div> <input type="checkbox" name="hobbies" value="music">Music
+                    <input type="checkbox" name="hobbies" value="sports">Sports
+                    <input type="checkbox" name="hobbies" value="traavel">Travel
+                    <input type="checkbox" name="hobbies" value="movies">Movies
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label> Source Of Income</label>
+                <div> <select name="Souce of Income"></div>
+                <option value="Employed">Employed</option">
+                <option value="self-Employed">Self-Employed</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            Income <div><input type="range" name="income" value="0" min="0" max="20K" required>
+                <span style="background-color: green; color: white;">20K</span>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div>
+                <label for="Picture"> Upload Profile Picture </label>
+                <div><input type="file" name="file" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="age"> Age </label>
+                <div> <input type="number" name="age" value="18"- required>
+                </div>
+            </div>
+        </div>
+
+        <p> Bio</p>
+        <textarea name="bio" cols="30" rows="3" required></textarea>
+
+
+
+
+        <div class="container">
+            <footer>
+                <input type="submit" value="Create">
+            </footer>
+            <!-- Table footer section -->
+        </div>
+
+    </form>
+
+</body>
+
+</html>

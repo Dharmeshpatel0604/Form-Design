@@ -1,0 +1,94 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ form {
+     border: 5px solid black;
+     font-weight: bold;
+     margin-top: 30px;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: linear-gradient(130deg, pink, rgb(72, 72, 243));
+ }
+
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 500px;
+     width: 100%;
+     padding: 10px 15px;
+ }
+
+ header,
+ footer {
+     background-color: rgb(171, 222, 241);
+     padding: 20px;
+     text-align: center;
+     overflow: auto;
+     flex-basis: 100%;
+     font-weight: bold;
+     font-size: larger;
+     color: white;
+     text-shadow: 1px 1px 4px black;
+ }
+
+ input[type="email"] {
+     /*   flex-basis: 100%; */
+     width: 93%;
+     margin-left: 15px;
+ }
+
+ p {
+     margin-left: 15px;
+ }
+
+ textarea {
+     background-color: lightgray;
+     width: 93%;
+     margin-left: 15px;
+     border: 2px solid black;
+     border-radius: 4px;
+ }
+
+ footer input[type="submit"] {
+
+     background-color: rgb(192, 243, 9);
+     height: 35px;
+     width: 100px;
+     font-weight: bold;
+     font-size: 17px;
+    }
+    input[type="submit"]:hover {
+        color: black;
+        background-color: indianred;
+    }
+
+ input[type=text],
+ input[type=email],
+ input[type=password],
+ input[type=number],
+ select {
+     box-sizing: border-box;
+     padding: 6px 8px;
+     border: 2px solid black;
+     background-color: lightgrey;
+     border-radius: 4px;
+
+ }
+
+ input[type=text]:focus,
+ input[type=email]:focus,
+ input[type=password]:focus,
+ input[type=number]:focus,
+ select:focus,
+ textarea:focus {
+     background-color: skyblue;
+ }
